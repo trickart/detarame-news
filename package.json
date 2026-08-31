@@ -1,0 +1,29 @@
+{
+  "name": "detarame-news",
+  "version": "1.0.0",
+  "description": "ウィキニュース日本語版のタイトルをマルコフ連鎖でごちゃまぜにした架空ニュースを毎日生成する静的サイト",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dump": "mkdir -p dump && curl -L -o dump/jawikinews-latest-pages-articles.xml.bz2 https://dumps.wikimedia.org/jawikinews/latest/jawikinews-latest-pages-articles.xml.bz2 && bunzip2 -kf dump/jawikinews-latest-pages-articles.xml.bz2",
+    "extract": "tsx src/extract-titles.ts",
+    "model": "tsx src/build-model.ts",
+    "preprocess": "npm run extract && npm run model",
+    "generate": "tsx src/generate.ts",
+    "sample": "tsx src/sample.ts",
+    "post": "tsx src/post-x.ts",
+    "build": "tsx src/build-site.ts && tsx src/build-og.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/kuromoji": "^0.1.3",
+    "@types/node": "^26.4.0",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "kuromoji": "^0.1.2"
+  }
+}

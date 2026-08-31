@@ -1,0 +1,149 @@
+:root {
+  color-scheme: light dark;
+  --bg: #faf8f4;
+  --fg: #1a1a1a;
+  --muted: #666;
+  --border: #ddd;
+  /* ソース色: 色相 --h はインラインで指定される */
+  --src-sat: 72%;
+  --src-lit: 34%;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16181d;
+    --fg: #e8e6e1;
+    --muted: #9a9a9a;
+    --border: #333;
+    --src-sat: 68%;
+    --src-lit: 70%;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+  line-height: 1.7;
+}
+
+.wrap {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+header.site {
+  border-bottom: 3px double var(--fg);
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+}
+header.site .brand {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin: 0;
+}
+header.site .brand a { color: inherit; text-decoration: none; }
+header.site .tagline {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.date {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+}
+.date .method {
+  float: right;
+  font-size: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.1em 0.8em;
+  font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+}
+
+h1.headline {
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 2rem;
+}
+h1.headline .seg {
+  color: hsl(var(--h) var(--src-sat) var(--src-lit));
+}
+
+.sources h2 {
+  font-size: 1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+  letter-spacing: 0.1em;
+}
+.sources p.note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0;
+}
+.sources ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+  font-size: 0.9rem;
+}
+.sources li { margin: 0.45rem 0; }
+.sources a {
+  color: hsl(var(--h) var(--src-sat) var(--src-lit));
+  text-decoration-color: hsl(var(--h) var(--src-sat) var(--src-lit) / 0.45);
+  text-underline-offset: 3px;
+}
+.sources a:hover { text-decoration-thickness: 2px; }
+.sources .swatch {
+  display: inline-block;
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background: hsl(var(--h) var(--src-sat) var(--src-lit));
+}
+
+nav.pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+}
+nav.pager a { color: inherit; }
+nav.pager .center { color: var(--muted); }
+
+.archive ul {
+  list-style: none;
+  padding: 0;
+}
+.archive li {
+  margin: 0.8rem 0;
+}
+.archive .adate {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.archive a { color: inherit; }
+
+footer.site {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 3px double var(--fg);
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+}
+footer.site a { color: inherit; }

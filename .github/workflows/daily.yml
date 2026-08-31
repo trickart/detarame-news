@@ -1,0 +1,72 @@
+# 毎日 JST 0時すぎに今日のニュースを生成してコミットし、
+# GitHub Pages にサイトをデプロイする。
+# main への push 時にもデプロイのみ実行する(手動修正の反映用)。
+name: daily-news
+
+on:
+  schedule:
+    - cron: "5 15 * * *" # UTC 15:05 = JST 0:05(数十分遅れることがある)
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: 依存関係をインストール
+        run: npm ci
+
+      - name: 今日のニュースを生成
+        run: npm run generate
+
+      - name: 生成結果をコミット
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add news
+          if ! git diff --cached --quiet; then
+            git commit -m "$(TZ=Asia/Tokyo date +%Y-%m-%d) のニュースを追加"
+            git push
+          fi
+
+      - name: サイトをビルド
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+      # 認証情報(Secrets)が未設定のときはスクリプト側でスキップされる
+      - name: X に投稿
+        if: github.event_name == 'schedule'
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: npm run post
