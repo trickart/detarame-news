@@ -6,7 +6,9 @@
  *   dist/news/YYYY-MM-DD.html  日別ページ
  *   dist/archive.html          アーカイブ一覧
  *   dist/feed.xml              Atom フィード(直近30件)
- *   dist/style.css ほか        (public/ をそのままコピー: favicon 等)
+ *   dist/sitemap.xml           サイトマップ(全ページ)
+ *   dist/404.html              Not Found ページ(GitHub Pages が自動で使う)
+ *   dist/style.css ほか        (public/ をそのままコピー: favicon, robots.txt 等)
  *
  * ソース色は「その日のソース一覧のインデックス × 黄金角」で色相を決め、
  * CSS カスタムプロパティ --h としてインラインで埋め込む。
@@ -177,6 +179,27 @@ ${entries}
 `;
 }
 
+/** サイトマップ(トップ・アーカイブ・全日別ページ) */
+function buildSitemap(all: DailyNews[]): string {
+  const latest = all[all.length - 1].date;
+  const urls: { loc: string; lastmod: string }[] = [
+    { loc: `${SITE_URL}/`, lastmod: latest },
+    { loc: `${SITE_URL}/archive.html`, lastmod: latest },
+    ...all.map((n) => ({
+      loc: `${SITE_URL}/news/${n.date}.html`,
+      lastmod: n.date,
+    })),
+  ];
+  const entries = urls
+    .map((u) => `<url><loc>${u.loc}</loc><lastmod>${u.lastmod}</lastmod></url>`)
+    .join("\n");
+  return `<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${entries}
+</urlset>
+`;
+}
+
 function pager(all: DailyNews[], index: number, pathPrefix: string): string {
   const prev = all[index - 1];
   const next = all[index + 1];
@@ -263,6 +286,29 @@ function main() {
 
   // Atom フィード
   writeFileSync(`dist/${FEED_FILE}`, buildFeed(all), "utf8");
+
+  // サイトマップ
+  writeFileSync("dist/sitemap.xml", buildSitemap(all), "utf8");
+
+  // 404 ページ。GitHub Pages は存在しないどのパスでもこれを返すため、
+  // CSS やリンクは相対ではなく絶対パスで参照する
+  const notFoundHtml = page({
+    title: `ページが見つかりません | ${SITE_TITLE}`,
+    description: "お探しのページは見つかりませんでした",
+    cssPath: "/style.css",
+    path: "404.html",
+    ogDate: latest.date,
+    body: [
+      siteHeader("/"),
+      `<section class="notfound">
+<h1>404 ─ ページが見つかりません</h1>
+<p>お探しのページは実在しませんでした。もっとも、当サイトのニュースはどれも実在しませんが。</p>
+<p><a href="/">本日のニュースへ</a> / <a href="/archive.html">アーカイブ</a></p>
+</section>`,
+      siteFooter(),
+    ].join("\n"),
+  });
+  writeFileSync("dist/404.html", notFoundHtml, "utf8");
 
   console.log(`dist/ に ${all.length} 日分のサイトを生成しました`);
 }

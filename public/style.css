@@ -138,6 +138,13 @@ nav.pager .center { color: var(--muted); }
 }
 .archive a { color: inherit; }
 
+.notfound h1 {
+  font-size: 1.9rem;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+.notfound a { color: inherit; }
+
 footer.site {
   margin-top: 3rem;
   padding-top: 1rem;
