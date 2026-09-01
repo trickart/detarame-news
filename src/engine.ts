@@ -16,6 +16,9 @@ import {
 const NG_WORDS: string[] = JSON.parse(
   readFileSync("data/ng-words.json", "utf8"),
 );
+const ACCUSATION_WORDS: string[] = JSON.parse(
+  readFileSync("data/accusation-words.json", "utf8"),
+);
 
 const MAX_TOKENS = 40;
 const MIN_LENGTH = 12;
@@ -171,6 +174,7 @@ export function generateNews(
 ): Generated | null {
   const rand = mulberry32(hashSeed(seedStr));
   const pivotIndex = method === "splice" ? buildPivotIndex(model) : null;
+  const properNouns = new Set(model.properNouns);
 
   let result: GenToken[] | null = null;
   for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
@@ -191,6 +195,13 @@ export function generateNews(
     if (NG_WORDS.some((w) => text.includes(w))) continue;
     // 括弧の対応が崩れた見出し(閉じ忘れ・閉じだけ)は棄却
     if (!bracketsBalanced(text)) continue;
+    // 実在の固有名詞(人名・組織など)と犯罪の嫌疑を思わせる語が同じ見出しに
+    // 共存すると、切り取られたときに事実と誤読されるおそれがあるので棄却
+    if (
+      ACCUSATION_WORDS.some((w) => text.includes(w)) &&
+      candidate.some((t) => properNouns.has(t.text))
+    )
+      continue;
     result = candidate;
     break;
   }
