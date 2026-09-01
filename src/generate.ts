@@ -8,12 +8,14 @@
  *
  * 日付文字列をシードにした決定的乱数を使うため、同じ日に再実行しても
  * 同じ結果になる(Actions のリトライで内容が変わらない)。
+ * 通常シードで棄却され尽くした場合はシード替え→手法切り替えの順で
+ * フォールバックする(これも決定的)。
  *
  * 使い方: tsx src/generate.ts [YYYY-MM-DD] [--force]
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { todayJST } from "./date.js";
-import { generateNews, methodForDate } from "./engine.js";
+import { generateForDate, methodForDate } from "./engine.js";
 import { METHOD_LABELS, type DailyNews, type Model } from "./types.js";
 
 const MODEL_PATH = "data/model.json";
@@ -32,14 +34,17 @@ function main() {
   }
 
   const model: Model = JSON.parse(readFileSync(MODEL_PATH, "utf8"));
-  const method = methodForDate(date);
-  const generated = generateNews(model, `detarame-news:${date}`, method);
+  const generated = generateForDate(model, date);
   if (!generated) {
-    console.error("生成に失敗しました(条件を満たす出力が得られません)");
+    console.error("生成に失敗しました(全手法・全リトライで条件を満たす出力が得られません)");
     process.exit(1);
   }
+  const { method, retry, ...rest } = generated;
+  if (retry > 0 || method !== methodForDate(date)) {
+    console.warn(`フォールバックを使用しました(手法 ${method}、リトライ ${retry})`);
+  }
 
-  const news: DailyNews = { date, method, ...generated };
+  const news: DailyNews = { date, method, ...rest };
   writeFileSync(outPath, JSON.stringify(news, null, 1), "utf8");
   console.log(`${outPath} [${METHOD_LABELS[method]}]: ${news.title}`);
   console.log(

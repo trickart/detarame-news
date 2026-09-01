@@ -11,6 +11,7 @@
     "preprocess": "npm run extract && npm run model",
     "generate": "tsx src/generate.ts",
     "sample": "tsx src/sample.ts",
+    "verify": "tsx src/verify.ts",
     "post": "tsx src/post-x.ts",
     "build": "tsx src/build-site.ts && tsx src/build-og.ts",
     "typecheck": "tsc --noEmit"

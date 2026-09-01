@@ -163,6 +163,40 @@ export interface Generated {
   sources: SourceRef[];
 }
 
+/** 生成失敗時にシードを変えて再試行する回数(generateForDate 用) */
+const FALLBACK_RETRIES = 5;
+
+export interface DailyGenerated extends Generated {
+  method: Method;
+  /** 0 なら通常シードで成功。1 以上はフォールバックシードを使った */
+  retry: number;
+}
+
+/**
+ * その日のニュースを生成する(日次運用のエントリポイント)。
+ * その日の手法+通常シードで失敗したら、シードを変えて再試行し、
+ * それでもだめならもう一方の手法に切り替える。全経路が決定的なので、
+ * 同じ日に再実行しても結果は変わらない。
+ */
+export function generateForDate(
+  model: Model,
+  date: string,
+): DailyGenerated | null {
+  const primary = methodForDate(date);
+  const methods: Method[] = [primary, primary === "splice" ? "markov2" : "splice"];
+  for (const method of methods) {
+    for (let retry = 0; retry <= FALLBACK_RETRIES; retry++) {
+      const seed =
+        retry === 0
+          ? `detarame-news:${date}`
+          : `detarame-news:${date}:retry${retry}`;
+      const generated = generateNews(model, seed, method);
+      if (generated) return { method, retry, ...generated };
+    }
+  }
+  return null;
+}
+
 /**
  * 棄却条件を満たす1本を生成する。
  * 同じ (model, seedStr, method) なら常に同じ結果を返す。
