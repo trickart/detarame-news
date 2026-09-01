@@ -5,6 +5,7 @@
  *   dist/index.html            最新のニュース
  *   dist/news/YYYY-MM-DD.html  日別ページ
  *   dist/archive.html          アーカイブ一覧
+ *   dist/feed.xml              Atom フィード(直近30件)
  *   dist/style.css             (public/ からコピー)
  *
  * ソース色は「その日のソース一覧のインデックス × 黄金角」で色相を決め、
@@ -23,6 +24,8 @@ import { METHOD_LABELS, SITE_URL, type DailyNews } from "./types.js";
 
 const SITE_TITLE = "でたらめニュース";
 const TAGLINE = "マルコフ連鎖とカットアップが日替わりでお届けする、実在しないニュース";
+const FEED_FILE = "feed.xml";
+const FEED_ENTRIES = 30;
 
 const GOLDEN_ANGLE = 137.508;
 
@@ -68,6 +71,7 @@ function page(opts: {
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="${canonical}">
+<link rel="alternate" type="application/atom+xml" title="${SITE_TITLE}" href="${SITE_URL}/${FEED_FILE}">
 <link rel="stylesheet" href="${opts.cssPath}">
 </head>
 <body>
@@ -90,6 +94,7 @@ function siteFooter(): string {
   return `<footer class="site">
 <p>このサイトのニュースはすべて自動生成された架空のものであり、事実ではありません。</p>
 <p>生成の素材として<a href="https://ja.wikinews.org/">ウィキニュース日本語版</a>の記事タイトル(<a href="https://creativecommons.org/licenses/by/2.5/deed.ja">CC BY 2.5</a>)を使用しています。本サイトのテキストも同ライセンスで提供されます。</p>
+<p><a href="${SITE_URL}/${FEED_FILE}">Atom フィード</a></p>
 </footer>`;
 }
 
@@ -118,6 +123,56 @@ ${sourceItems}
 </ul>
 </section>
 </article>`;
+}
+
+/** YYYY-MM-DD → RFC 3339(日次生成が走る JST 0:05 を公開時刻とする) */
+function atomDate(date: string): string {
+  return `${date}T00:05:00+09:00`;
+}
+
+/** フィード用のエントリ本文(HTML)。切り取り対策として免責も毎回含める */
+function feedContent(news: DailyNews): string {
+  const sourceItems = news.sources
+    .map(
+      (src) =>
+        `<li><a href="${escapeHtml(src.url)}">${escapeHtml(src.title)}</a></li>`,
+    )
+    .join("");
+  return `<p>本日の製法: ${METHOD_LABELS[news.method]}</p>
+<p>本日のソース記事:</p>
+<ul>${sourceItems}</ul>
+<p>この見出しは自動生成された架空のものであり、事実ではありません。</p>`;
+}
+
+/** Atom フィード(直近 FEED_ENTRIES 件、新しい順) */
+function buildFeed(all: DailyNews[]): string {
+  const recent = all.slice(-FEED_ENTRIES).reverse();
+  const entries = recent
+    .map((news) => {
+      const url = `${SITE_URL}/news/${news.date}.html`;
+      return `<entry>
+<id>${url}</id>
+<title>${escapeHtml(news.title)}</title>
+<link rel="alternate" type="text/html" href="${url}"/>
+<published>${atomDate(news.date)}</published>
+<updated>${atomDate(news.date)}</updated>
+<content type="html">${escapeHtml(feedContent(news))}</content>
+</entry>`;
+    })
+    .join("\n");
+  return `<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<id>${SITE_URL}/</id>
+<title>${SITE_TITLE}</title>
+<subtitle>${escapeHtml(TAGLINE)}</subtitle>
+<link rel="alternate" type="text/html" href="${SITE_URL}/"/>
+<link rel="self" type="application/atom+xml" href="${SITE_URL}/${FEED_FILE}"/>
+<updated>${atomDate(recent[0].date)}</updated>
+<author><name>${SITE_TITLE}</name><uri>${SITE_URL}/</uri></author>
+<rights>本フィードのニュースはすべて自動生成された架空のものです。素材としてウィキニュース日本語版の記事タイトル(CC BY 2.5)を使用しており、テキストは同ライセンスで提供されます。</rights>
+${entries}
+</feed>
+`;
 }
 
 function pager(all: DailyNews[], index: number, pathPrefix: string): string {
@@ -203,6 +258,9 @@ function main() {
     ].join("\n"),
   });
   writeFileSync("dist/archive.html", archiveHtml, "utf8");
+
+  // Atom フィード
+  writeFileSync(`dist/${FEED_FILE}`, buildFeed(all), "utf8");
 
   console.log(`dist/ に ${all.length} 日分のサイトを生成しました`);
 }

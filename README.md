@@ -40,7 +40,8 @@ GitHub Actions (毎日 JST 0:05) ── 生成 news/YYYY-MM-DD.json ── コ�
 - `src/extract-titles.ts` — dump XML から ns=0・非リダイレクトの記事タイトルを抽出
 - `src/build-model.ts` — kuromoji で分かち書きし、両手法用のモデル(2次マルコフ遷移+トークン列・ピボット位置)を構築。どの部分がどの記事由来かを追跡できる
 - `src/generate.ts` — 日付をシードにした決定的乱数で一日分を生成(再実行しても同じ結果)。手法は日付の偶奇で切り替え
-- `src/build-site.ts` — `news/*.json` から `dist/` に静的サイトを生成(OGP メタタグ付き)
+- `src/build-site.ts` — `news/*.json` から `dist/` に静的サイトを生成(OGP メタタグ付き)。
+  直近30件の Atom フィード `dist/feed.xml` もここで生成
 - `src/build-og.ts` — 日別の OGP 画像(1200×630 PNG)を `dist/og/` に生成。
   見出しはサイトと同じソース別色分きで描画される(フォントは `assets/fonts/` に同梱)
 
