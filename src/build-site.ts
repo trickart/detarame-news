@@ -6,13 +6,13 @@
  *   dist/news/YYYY-MM-DD.html  日別ページ
  *   dist/archive.html          アーカイブ一覧
  *   dist/feed.xml              Atom フィード(直近30件)
- *   dist/style.css             (public/ からコピー)
+ *   dist/style.css ほか        (public/ をそのままコピー: favicon 等)
  *
  * ソース色は「その日のソース一覧のインデックス × 黄金角」で色相を決め、
  * CSS カスタムプロパティ --h としてインラインで埋め込む。
  */
 import {
-  copyFileSync,
+  cpSync,
   mkdirSync,
   readFileSync,
   readdirSync,
@@ -71,6 +71,8 @@ function page(opts: {
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="${canonical}">
+<link rel="icon" type="image/png" href="${SITE_URL}/favicon.png">
+<link rel="apple-touch-icon" href="${SITE_URL}/apple-touch-icon.png">
 <link rel="alternate" type="application/atom+xml" title="${SITE_TITLE}" href="${SITE_URL}/${FEED_FILE}">
 <link rel="stylesheet" href="${opts.cssPath}">
 </head>
@@ -205,7 +207,7 @@ function main() {
 
   rmSync("dist", { recursive: true, force: true });
   mkdirSync("dist/news", { recursive: true });
-  copyFileSync("public/style.css", "dist/style.css");
+  cpSync("public", "dist", { recursive: true });
 
   // 日別ページ
   all.forEach((news, i) => {

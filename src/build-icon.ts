@@ -1,9 +1,13 @@
 /**
- * X (Twitter) 用のプロフィールアイコンを assets/ に生成する。
+ * プロフィールアイコンとサイトの favicon を生成する。
  * サイトの配色(クリーム地 + ソース色分けパレット)に合わせた「で」一文字。
  *
- *   assets/x-icon.png       … 多色(ソース色の斜めストライプ)
- *   assets/x-icon-black.png … 黒一色
+ *   assets/x-icon.png           … X 用・多色(ソース色の斜めストライプ)
+ *   assets/x-icon-black.png     … X 用・黒一色
+ *   public/favicon.png          … サイト用 favicon(多色・256px)
+ *   public/apple-touch-icon.png … iOS ホーム画面用(多色・180px)
+ *
+ * public/ はサイトビルド時に dist/ へそのままコピーされる。
  *
  * 使い方: tsx src/build-icon.ts
  */
@@ -49,13 +53,14 @@ ${defs}
 </svg>`;
 }
 
-function render(svg: string, outPath: string) {
+function render(svg: string, outPath: string, width = SIZE) {
   const resvg = new Resvg(svg, {
     font: {
       fontFiles: [FONT_PATH],
       loadSystemFonts: false,
       defaultFontFamily: FONT_FAMILY,
     },
+    fitTo: { mode: "width", value: width },
   });
   writeFileSync(outPath, resvg.render().asPng());
   console.log(`${outPath} を生成しました`);
@@ -78,3 +83,7 @@ render(buildSvg("url(#seg)", gradientDefs), "assets/x-icon.png");
 
 // 黒一色版
 render(buildSvg("#1a1a1a"), "assets/x-icon-black.png");
+
+// サイト用 favicon(多色版の縮小)
+render(buildSvg("url(#seg)", gradientDefs), "public/favicon.png", 256);
+render(buildSvg("url(#seg)", gradientDefs), "public/apple-touch-icon.png", 180);
