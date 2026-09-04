@@ -15,7 +15,7 @@
 import { createHmac, randomBytes } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { todayJST } from "./date.js";
-import { SITE_URL, type DailyNews } from "./types.js";
+import type { DailyNews } from "./types.js";
 
 const API_URL = "https://api.x.com/2/tweets";
 
@@ -57,11 +57,9 @@ function oauthHeader(
   return `OAuth ${header}`;
 }
 
+/** 投稿本文。URL 入りの投稿は料金が高くなるため、見出しとハッシュタグのみにする */
 function buildText(news: DailyNews): string {
-  return [
-    `${news.title} #でたらめニュース`,
-    `${SITE_URL}/news/${news.date}.html`,
-  ].join("\n");
+  return `${news.title} #でたらめニュース`;
 }
 
 async function main() {
