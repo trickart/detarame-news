@@ -102,6 +102,16 @@ function siteFooter(): string {
 </footer>`;
 }
 
+/** X の投稿画面を開くリンク(Web Intent)。本文・URL・ハッシュタグを埋めた状態で開く */
+function shareOnXUrl(news: DailyNews): string {
+  const params = new URLSearchParams({
+    text: news.title,
+    url: `${SITE_URL}/news/${news.date}.html`,
+    hashtags: "でたらめニュース",
+  });
+  return `https://x.com/intent/post?${params.toString()}`;
+}
+
 /** 見出しとソース一覧をまとめた記事ブロック */
 function articleBlock(news: DailyNews): string {
   const headline = news.segments
@@ -119,6 +129,7 @@ function articleBlock(news: DailyNews): string {
   return `<article>
 <p class="date">${formatDateJa(news.date)}<span class="method">本日の製法: ${METHOD_LABELS[news.method]}</span></p>
 <h1 class="headline">${headline}</h1>
+<p class="share"><a class="share-x" href="${escapeHtml(shareOnXUrl(news))}" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" width="1em" height="1em"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>シェア</a></p>
 <section class="sources">
 <h2>本日のソース記事</h2>
 <p class="note">見出しの文字色は、その部分の由来となった記事を示しています。</p>
