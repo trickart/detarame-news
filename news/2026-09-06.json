@@ -1,0 +1,27 @@
+{
+ "date": "2026-09-06",
+ "method": "splice",
+ "title": "JR西日本グループ・東方神起が活動休止",
+ "segments": [
+  {
+   "text": "JR西日本グループ",
+   "source": 0
+  },
+  {
+   "text": "・東方神起が活動休止",
+   "source": 1
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "JR西日本グループ会社の社員、ICOCAで不正乗車を繰り返し懲戒解雇",
+   "url": "https://ja.wikinews.org/wiki/JR%E8%A5%BF%E6%97%A5%E6%9C%AC%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E4%BC%9A%E7%A4%BE%E3%81%AE%E7%A4%BE%E5%93%A1%E3%80%81ICOCA%E3%81%A7%E4%B8%8D%E6%AD%A3%E4%B9%97%E8%BB%8A%E3%82%92%E7%B9%B0%E3%82%8A%E8%BF%94%E3%81%97%E6%87%B2%E6%88%92%E8%A7%A3%E9%9B%87"
+  },
+  {
+   "id": 1,
+   "title": "韓国の男性アイドルグループ・東方神起が活動休止",
+   "url": "https://ja.wikinews.org/wiki/%E9%9F%93%E5%9B%BD%E3%81%AE%E7%94%B7%E6%80%A7%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%83%BB%E6%9D%B1%E6%96%B9%E7%A5%9E%E8%B5%B7%E3%81%8C%E6%B4%BB%E5%8B%95%E4%BC%91%E6%AD%A2"
+  }
+ ]
+}
