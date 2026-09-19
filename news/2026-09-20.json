@@ -1,0 +1,27 @@
+{
+ "date": "2026-09-20",
+ "method": "splice",
+ "title": "「夢の超特急」新幹線新駅建設は中止に",
+ "segments": [
+  {
+   "text": "「夢の超特急」新幹線",
+   "source": 0
+  },
+  {
+   "text": "新駅建設は中止に",
+   "source": 1
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "「夢の超特急」新幹線0系最後の営業運転",
+   "url": "https://ja.wikinews.org/wiki/%E3%80%8C%E5%A4%A2%E3%81%AE%E8%B6%85%E7%89%B9%E6%80%A5%E3%80%8D%E6%96%B0%E5%B9%B9%E7%B7%9A0%E7%B3%BB%E6%9C%80%E5%BE%8C%E3%81%AE%E5%96%B6%E6%A5%AD%E9%81%8B%E8%BB%A2"
+  },
+  {
+   "id": 1,
+   "title": "滋賀県の新幹線新駅建設は中止に",
+   "url": "https://ja.wikinews.org/wiki/%E6%BB%8B%E8%B3%80%E7%9C%8C%E3%81%AE%E6%96%B0%E5%B9%B9%E7%B7%9A%E6%96%B0%E9%A7%85%E5%BB%BA%E8%A8%AD%E3%81%AF%E4%B8%AD%E6%AD%A2%E3%81%AB"
+  }
+ ]
+}
