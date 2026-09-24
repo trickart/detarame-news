@@ -1,0 +1,63 @@
+{
+ "date": "2026-09-25",
+ "method": "markov2",
+ "title": "台風9号 (ヒーゴス) が発生",
+ "segments": [
+  {
+   "text": "台風",
+   "source": 0
+  },
+  {
+   "text": "9",
+   "source": 1
+  },
+  {
+   "text": "号",
+   "source": 2
+  },
+  {
+   "text": " ",
+   "source": 3
+  },
+  {
+   "text": "(",
+   "source": 4
+  },
+  {
+   "text": "ヒーゴス) が発生",
+   "source": 5
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "台風11号の影響で高校野球開幕は2日延期 11日から",
+   "url": "https://ja.wikinews.org/wiki/%E5%8F%B0%E9%A2%A811%E5%8F%B7%E3%81%AE%E5%BD%B1%E9%9F%BF%E3%81%A7%E9%AB%98%E6%A0%A1%E9%87%8E%E7%90%83%E9%96%8B%E5%B9%95%E3%81%AF2%E6%97%A5%E5%BB%B6%E6%9C%9F_11%E6%97%A5%E3%81%8B%E3%82%89"
+  },
+  {
+   "id": 1,
+   "title": "台風9号、台湾南端に上陸",
+   "url": "https://ja.wikinews.org/wiki/%E5%8F%B0%E9%A2%A89%E5%8F%B7%E3%80%81%E5%8F%B0%E6%B9%BE%E5%8D%97%E7%AB%AF%E3%81%AB%E4%B8%8A%E9%99%B8"
+  },
+  {
+   "id": 2,
+   "title": "日本の南で台風9号が発生",
+   "url": "https://ja.wikinews.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%8D%97%E3%81%A7%E5%8F%B0%E9%A2%A89%E5%8F%B7%E3%81%8C%E7%99%BA%E7%94%9F"
+  },
+  {
+   "id": 3,
+   "title": "台風9号 関東でも豪雨被害多発",
+   "url": "https://ja.wikinews.org/wiki/%E5%8F%B0%E9%A2%A89%E5%8F%B7_%E9%96%A2%E6%9D%B1%E3%81%A7%E3%82%82%E8%B1%AA%E9%9B%A8%E8%A2%AB%E5%AE%B3%E5%A4%9A%E7%99%BA"
+  },
+  {
+   "id": 4,
+   "title": "台風25号 (パカー) がフィリピンの東で発生",
+   "url": "https://ja.wikinews.org/wiki/%E5%8F%B0%E9%A2%A825%E5%8F%B7_(%E3%83%91%E3%82%AB%E3%83%BC)_%E3%81%8C%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E3%81%AE%E6%9D%B1%E3%81%A7%E7%99%BA%E7%94%9F"
+  },
+  {
+   "id": 5,
+   "title": "南シナ海で台風7号 (ヒーゴス) が発生",
+   "url": "https://ja.wikinews.org/wiki/%E5%8D%97%E3%82%B7%E3%83%8A%E6%B5%B7%E3%81%A7%E5%8F%B0%E9%A2%A87%E5%8F%B7_(%E3%83%92%E3%83%BC%E3%82%B4%E3%82%B9)_%E3%81%8C%E7%99%BA%E7%94%9F"
+  }
+ ]
+}
