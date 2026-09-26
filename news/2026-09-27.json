@@ -1,0 +1,45 @@
+{
+ "date": "2026-09-27",
+ "method": "markov2",
+ "title": "雌阿寒岳が小噴火、軽石を大量に流出される",
+ "segments": [
+  {
+   "text": "雌阿寒岳が小噴火、",
+   "source": 0
+  },
+  {
+   "text": "軽石を大量に",
+   "source": 1
+  },
+  {
+   "text": "流出",
+   "source": 2
+  },
+  {
+   "text": "される",
+   "source": 3
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "雌阿寒岳が小噴火、2か所に降灰",
+   "url": "https://ja.wikinews.org/wiki/%E9%9B%8C%E9%98%BF%E5%AF%92%E5%B2%B3%E3%81%8C%E5%B0%8F%E5%99%B4%E7%81%AB%E3%80%812%E3%81%8B%E6%89%80%E3%81%AB%E9%99%8D%E7%81%B0"
+  },
+  {
+   "id": 1,
+   "title": "小笠原諸島の海底火山が噴火、軽石を大量に放出",
+   "url": "https://ja.wikinews.org/wiki/%E5%B0%8F%E7%AC%A0%E5%8E%9F%E8%AB%B8%E5%B3%B6%E3%81%AE%E6%B5%B7%E5%BA%95%E7%81%AB%E5%B1%B1%E3%81%8C%E5%99%B4%E7%81%AB%E3%80%81%E8%BB%BD%E7%9F%B3%E3%82%92%E5%A4%A7%E9%87%8F%E3%81%AB%E6%94%BE%E5%87%BA"
+  },
+  {
+   "id": 2,
+   "title": "KDDIが運営するプロバイダ \"DION\" 個人情報が大量に流出",
+   "url": "https://ja.wikinews.org/wiki/KDDI%E3%81%8C%E9%81%8B%E5%96%B6%E3%81%99%E3%82%8B%E3%83%97%E3%83%AD%E3%83%90%E3%82%A4%E3%83%80_%22DION%22_%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E3%81%8C%E5%A4%A7%E9%87%8F%E3%81%AB%E6%B5%81%E5%87%BA"
+  },
+  {
+   "id": 3,
+   "title": "TBSクイズ番組「さんまのスーパーからくりTV」の出演者個人情報がネット上に流出される",
+   "url": "https://ja.wikinews.org/wiki/TBS%E3%82%AF%E3%82%A4%E3%82%BA%E7%95%AA%E7%B5%84%E3%80%8C%E3%81%95%E3%82%93%E3%81%BE%E3%81%AE%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%81%8B%E3%82%89%E3%81%8F%E3%82%8ATV%E3%80%8D%E3%81%AE%E5%87%BA%E6%BC%94%E8%80%85%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E3%81%8C%E3%83%8D%E3%83%83%E3%83%88%E4%B8%8A%E3%81%AB%E6%B5%81%E5%87%BA%E3%81%95%E3%82%8C%E3%82%8B"
+  }
+ ]
+}
