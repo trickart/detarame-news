@@ -1,0 +1,45 @@
+{
+ "date": "2026-09-29",
+ "method": "markov2",
+ "title": "東急田園都市線、大幅に会期前倒し",
+ "segments": [
+  {
+   "text": "東急",
+   "source": 0
+  },
+  {
+   "text": "田園都市線",
+   "source": 1
+  },
+  {
+   "text": "、大幅",
+   "source": 2
+  },
+  {
+   "text": "に会期前倒し",
+   "source": 3
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "東急目黒線が日吉まで延伸",
+   "url": "https://ja.wikinews.org/wiki/%E6%9D%B1%E6%80%A5%E7%9B%AE%E9%BB%92%E7%B7%9A%E3%81%8C%E6%97%A5%E5%90%89%E3%81%BE%E3%81%A7%E5%BB%B6%E4%BC%B8"
+  },
+  {
+   "id": 1,
+   "title": "東急田園都市線で列車がホームに接触",
+   "url": "https://ja.wikinews.org/wiki/%E6%9D%B1%E6%80%A5%E7%94%B0%E5%9C%92%E9%83%BD%E5%B8%82%E7%B7%9A%E3%81%A7%E5%88%97%E8%BB%8A%E3%81%8C%E3%83%9B%E3%83%BC%E3%83%A0%E3%81%AB%E6%8E%A5%E8%A7%A6"
+  },
+  {
+   "id": 2,
+   "title": "東急田園都市線、大幅にダイヤ乱れる",
+   "url": "https://ja.wikinews.org/wiki/%E6%9D%B1%E6%80%A5%E7%94%B0%E5%9C%92%E9%83%BD%E5%B8%82%E7%B7%9A%E3%80%81%E5%A4%A7%E5%B9%85%E3%81%AB%E3%83%80%E3%82%A4%E3%83%A4%E4%B9%B1%E3%82%8C%E3%82%8B"
+  },
+  {
+   "id": 3,
+   "title": "2008年の夏の甲子園、大幅に会期前倒し",
+   "url": "https://ja.wikinews.org/wiki/2008%E5%B9%B4%E3%81%AE%E5%A4%8F%E3%81%AE%E7%94%B2%E5%AD%90%E5%9C%92%E3%80%81%E5%A4%A7%E5%B9%85%E3%81%AB%E4%BC%9A%E6%9C%9F%E5%89%8D%E5%80%92%E3%81%97"
+  }
+ ]
+}
