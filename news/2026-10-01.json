@@ -1,0 +1,54 @@
+{
+ "date": "2026-10-01",
+ "method": "markov2",
+ "title": "訃報 村木与四郎氏 パ・リーグ初の快挙",
+ "segments": [
+  {
+   "text": "訃報",
+   "source": 0
+  },
+  {
+   "text": " ",
+   "source": 1
+  },
+  {
+   "text": "村木与四郎氏 ",
+   "source": 2
+  },
+  {
+   "text": "パ・リーグ初の",
+   "source": 3
+  },
+  {
+   "text": "快挙",
+   "source": 4
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "訃報 松本竜助氏",
+   "url": "https://ja.wikinews.org/wiki/%E8%A8%83%E5%A0%B1_%E6%9D%BE%E6%9C%AC%E7%AB%9C%E5%8A%A9%E6%B0%8F"
+  },
+  {
+   "id": 1,
+   "title": "訃報 山田五十鈴さん - 女優として初めて文化勲章を受章",
+   "url": "https://ja.wikinews.org/wiki/%E8%A8%83%E5%A0%B1_%E5%B1%B1%E7%94%B0%E4%BA%94%E5%8D%81%E9%88%B4%E3%81%95%E3%82%93_-_%E5%A5%B3%E5%84%AA%E3%81%A8%E3%81%97%E3%81%A6%E5%88%9D%E3%82%81%E3%81%A6%E6%96%87%E5%8C%96%E5%8B%B2%E7%AB%A0%E3%82%92%E5%8F%97%E7%AB%A0"
+  },
+  {
+   "id": 2,
+   "title": "訃報 村木与四郎氏 - 黒澤明監督映画の美術監督",
+   "url": "https://ja.wikinews.org/wiki/%E8%A8%83%E5%A0%B1_%E6%9D%91%E6%9C%A8%E4%B8%8E%E5%9B%9B%E9%83%8E%E6%B0%8F_-_%E9%BB%92%E6%BE%A4%E6%98%8E%E7%9B%A3%E7%9D%A3%E6%98%A0%E7%94%BB%E3%81%AE%E7%BE%8E%E8%A1%93%E7%9B%A3%E7%9D%A3"
+  },
+  {
+   "id": 3,
+   "title": "訃報 林義一氏 パ・リーグ初のノーヒットノーラン達成者",
+   "url": "https://ja.wikinews.org/wiki/%E8%A8%83%E5%A0%B1_%E6%9E%97%E7%BE%A9%E4%B8%80%E6%B0%8F_%E3%83%91%E3%83%BB%E3%83%AA%E3%83%BC%E3%82%B0%E5%88%9D%E3%81%AE%E3%83%8E%E3%83%BC%E3%83%92%E3%83%83%E3%83%88%E3%83%8E%E3%83%BC%E3%83%A9%E3%83%B3%E9%81%94%E6%88%90%E8%80%85"
+  },
+  {
+   "id": 4,
+   "title": "大相撲・琴欧洲初優勝 ヨーロッパ出身力士初の快挙",
+   "url": "https://ja.wikinews.org/wiki/%E5%A4%A7%E7%9B%B8%E6%92%B2%E3%83%BB%E7%90%B4%E6%AC%A7%E6%B4%B2%E5%88%9D%E5%84%AA%E5%8B%9D_%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91%E5%87%BA%E8%BA%AB%E5%8A%9B%E5%A3%AB%E5%88%9D%E3%81%AE%E5%BF%AB%E6%8C%99"
+  }
+ ]
+}
