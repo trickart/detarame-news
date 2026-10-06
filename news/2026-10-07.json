@@ -1,0 +1,27 @@
+{
+ "date": "2026-10-07",
+ "method": "markov2",
+ "title": "田原総一朗氏の擁立活発化",
+ "segments": [
+  {
+   "text": "田原総一朗氏の",
+   "source": 0
+  },
+  {
+   "text": "擁立活発化",
+   "source": 1
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "田原総一朗氏の「有本恵子さん生存否定」発言、田原氏に取材テープの提出命令",
+   "url": "https://ja.wikinews.org/wiki/%E7%94%B0%E5%8E%9F%E7%B7%8F%E4%B8%80%E6%9C%97%E6%B0%8F%E3%81%AE%E3%80%8C%E6%9C%89%E6%9C%AC%E6%81%B5%E5%AD%90%E3%81%95%E3%82%93%E7%94%9F%E5%AD%98%E5%90%A6%E5%AE%9A%E3%80%8D%E7%99%BA%E8%A8%80%E3%80%81%E7%94%B0%E5%8E%9F%E6%B0%8F%E3%81%AB%E5%8F%96%E6%9D%90%E3%83%86%E3%83%BC%E3%83%97%E3%81%AE%E6%8F%90%E5%87%BA%E5%91%BD%E4%BB%A4"
+  },
+  {
+   "id": 1,
+   "title": "鳥取県知事選への平井氏の擁立活発化",
+   "url": "https://ja.wikinews.org/wiki/%E9%B3%A5%E5%8F%96%E7%9C%8C%E7%9F%A5%E4%BA%8B%E9%81%B8%E3%81%B8%E3%81%AE%E5%B9%B3%E4%BA%95%E6%B0%8F%E3%81%AE%E6%93%81%E7%AB%8B%E6%B4%BB%E7%99%BA%E5%8C%96"
+  }
+ ]
+}
