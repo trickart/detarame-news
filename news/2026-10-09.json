@@ -1,0 +1,108 @@
+{
+ "date": "2026-10-09",
+ "method": "markov2",
+ "title": "2009夏の甲子園栃木県の病院や学校に原告適格 - リビア・42年の判決",
+ "segments": [
+  {
+   "text": "2009",
+   "source": 0
+  },
+  {
+   "text": "夏",
+   "source": 1
+  },
+  {
+   "text": "の",
+   "source": 2
+  },
+  {
+   "text": "甲子園",
+   "source": 3
+  },
+  {
+   "text": "栃木県",
+   "source": 4
+  },
+  {
+   "text": "の",
+   "source": 5
+  },
+  {
+   "text": "病院",
+   "source": 6
+  },
+  {
+   "text": "や学校に原告適格 -",
+   "source": 7
+  },
+  {
+   "text": " ",
+   "source": 8
+  },
+  {
+   "text": "リビア・42年の",
+   "source": 9
+  },
+  {
+   "text": "判決",
+   "source": 10
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "2009衆院選 民主党単独過半数で政権交代へ",
+   "url": "https://ja.wikinews.org/wiki/2009%E8%A1%86%E9%99%A2%E9%81%B8_%E6%B0%91%E4%B8%BB%E5%85%9A%E5%8D%98%E7%8B%AC%E9%81%8E%E5%8D%8A%E6%95%B0%E3%81%A7%E6%94%BF%E6%A8%A9%E4%BA%A4%E4%BB%A3%E3%81%B8"
+  },
+  {
+   "id": 1,
+   "title": "2009夏の甲子園、2日連続で雨天全試合中止",
+   "url": "https://ja.wikinews.org/wiki/2009%E5%A4%8F%E3%81%AE%E7%94%B2%E5%AD%90%E5%9C%92%E3%80%812%E6%97%A5%E9%80%A3%E7%B6%9A%E3%81%A7%E9%9B%A8%E5%A4%A9%E5%85%A8%E8%A9%A6%E5%90%88%E4%B8%AD%E6%AD%A2"
+  },
+  {
+   "id": 2,
+   "title": "2009夏の甲子園 中京大中京が古豪復活 - 43年ぶりの高校野球日本一",
+   "url": "https://ja.wikinews.org/wiki/2009%E5%A4%8F%E3%81%AE%E7%94%B2%E5%AD%90%E5%9C%92_%E4%B8%AD%E4%BA%AC%E5%A4%A7%E4%B8%AD%E4%BA%AC%E3%81%8C%E5%8F%A4%E8%B1%AA%E5%BE%A9%E6%B4%BB_-_43%E5%B9%B4%E3%81%B6%E3%82%8A%E3%81%AE%E9%AB%98%E6%A0%A1%E9%87%8E%E7%90%83%E6%97%A5%E6%9C%AC%E4%B8%80"
+  },
+  {
+   "id": 3,
+   "title": "夏の甲子園 駒大苫小牧 史上6校目57年ぶりの2連覇達成",
+   "url": "https://ja.wikinews.org/wiki/%E5%A4%8F%E3%81%AE%E7%94%B2%E5%AD%90%E5%9C%92_%E9%A7%92%E5%A4%A7%E8%8B%AB%E5%B0%8F%E7%89%A7_%E5%8F%B2%E4%B8%8A6%E6%A0%A1%E7%9B%AE57%E5%B9%B4%E3%81%B6%E3%82%8A%E3%81%AE2%E9%80%A3%E8%A6%87%E9%81%94%E6%88%90"
+  },
+  {
+   "id": 4,
+   "title": "夏の甲子園栃木県代表校の野球部員ら、傷害容疑で逮捕",
+   "url": "https://ja.wikinews.org/wiki/%E5%A4%8F%E3%81%AE%E7%94%B2%E5%AD%90%E5%9C%92%E6%A0%83%E6%9C%A8%E7%9C%8C%E4%BB%A3%E8%A1%A8%E6%A0%A1%E3%81%AE%E9%87%8E%E7%90%83%E9%83%A8%E5%93%A1%E3%82%89%E3%80%81%E5%82%B7%E5%AE%B3%E5%AE%B9%E7%96%91%E3%81%A7%E9%80%AE%E6%8D%95"
+  },
+  {
+   "id": 5,
+   "title": "栃木県の小学生女児殺害される",
+   "url": "https://ja.wikinews.org/wiki/%E6%A0%83%E6%9C%A8%E7%9C%8C%E3%81%AE%E5%B0%8F%E5%AD%A6%E7%94%9F%E5%A5%B3%E5%85%90%E6%AE%BA%E5%AE%B3%E3%81%95%E3%82%8C%E3%82%8B"
+  },
+  {
+   "id": 6,
+   "title": "兵庫県の病院のケアマネジャーが老人姉妹の預金を着服し解雇",
+   "url": "https://ja.wikinews.org/wiki/%E5%85%B5%E5%BA%AB%E7%9C%8C%E3%81%AE%E7%97%85%E9%99%A2%E3%81%AE%E3%82%B1%E3%82%A2%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%8C%E8%80%81%E4%BA%BA%E5%A7%89%E5%A6%B9%E3%81%AE%E9%A0%90%E9%87%91%E3%82%92%E7%9D%80%E6%9C%8D%E3%81%97%E8%A7%A3%E9%9B%87"
+  },
+  {
+   "id": 7,
+   "title": "競輪の場外車券売場の設置許可取消訴訟、周辺の病院や学校に原告適格 - 最高裁が初判断",
+   "url": "https://ja.wikinews.org/wiki/%E7%AB%B6%E8%BC%AA%E3%81%AE%E5%A0%B4%E5%A4%96%E8%BB%8A%E5%88%B8%E5%A3%B2%E5%A0%B4%E3%81%AE%E8%A8%AD%E7%BD%AE%E8%A8%B1%E5%8F%AF%E5%8F%96%E6%B6%88%E8%A8%B4%E8%A8%9F%E3%80%81%E5%91%A8%E8%BE%BA%E3%81%AE%E7%97%85%E9%99%A2%E3%82%84%E5%AD%A6%E6%A0%A1%E3%81%AB%E5%8E%9F%E5%91%8A%E9%81%A9%E6%A0%BC_-_%E6%9C%80%E9%AB%98%E8%A3%81%E3%81%8C%E5%88%9D%E5%88%A4%E6%96%AD"
+  },
+  {
+   "id": 8,
+   "title": "北海道の別海町で41回目の「馬事競技大会」が開催される - 繋駕速歩競走や騎乗速歩競走も行われる",
+   "url": "https://ja.wikinews.org/wiki/%E5%8C%97%E6%B5%B7%E9%81%93%E3%81%AE%E5%88%A5%E6%B5%B7%E7%94%BA%E3%81%A741%E5%9B%9E%E7%9B%AE%E3%81%AE%E3%80%8C%E9%A6%AC%E4%BA%8B%E7%AB%B6%E6%8A%80%E5%A4%A7%E4%BC%9A%E3%80%8D%E3%81%8C%E9%96%8B%E5%82%AC%E3%81%95%E3%82%8C%E3%82%8B_-_%E7%B9%8B%E9%A7%95%E9%80%9F%E6%AD%A9%E7%AB%B6%E8%B5%B0%E3%82%84%E9%A8%8E%E4%B9%97%E9%80%9F%E6%AD%A9%E7%AB%B6%E8%B5%B0%E3%82%82%E8%A1%8C%E3%82%8F%E3%82%8C%E3%82%8B"
+  },
+  {
+   "id": 9,
+   "title": "カダフィ大佐死亡 - リビア・42年の独裁政権に終止符",
+   "url": "https://ja.wikinews.org/wiki/%E3%82%AB%E3%83%80%E3%83%95%E3%82%A3%E5%A4%A7%E4%BD%90%E6%AD%BB%E4%BA%A1_-_%E3%83%AA%E3%83%93%E3%82%A2%E3%83%BB42%E5%B9%B4%E3%81%AE%E7%8B%AC%E8%A3%81%E6%94%BF%E6%A8%A9%E3%81%AB%E7%B5%82%E6%AD%A2%E7%AC%A6"
+  },
+  {
+   "id": 10,
+   "title": "日本初の裁判員裁判、懲役15年の判決 - 東京地裁",
+   "url": "https://ja.wikinews.org/wiki/%E6%97%A5%E6%9C%AC%E5%88%9D%E3%81%AE%E8%A3%81%E5%88%A4%E5%93%A1%E8%A3%81%E5%88%A4%E3%80%81%E6%87%B2%E5%BD%B915%E5%B9%B4%E3%81%AE%E5%88%A4%E6%B1%BA_-_%E6%9D%B1%E4%BA%AC%E5%9C%B0%E8%A3%81"
+  }
+ ]
+}
