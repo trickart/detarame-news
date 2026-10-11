@@ -1,0 +1,27 @@
+{
+ "date": "2026-10-12",
+ "method": "splice",
+ "title": "アフガニスタン東部で地震 死者数は戦後2番目に",
+ "segments": [
+  {
+   "text": "アフガニスタン東部で地震 死者",
+   "source": 0
+  },
+  {
+   "text": "数は戦後2番目に",
+   "source": 1
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "アフガニスタン東部で地震 死者1000人超",
+   "url": "https://ja.wikinews.org/wiki/%E3%82%A2%E3%83%95%E3%82%AC%E3%83%8B%E3%82%B9%E3%82%BF%E3%83%B3%E6%9D%B1%E9%83%A8%E3%81%A7%E5%9C%B0%E9%9C%87_%E6%AD%BB%E8%80%851000%E4%BA%BA%E8%B6%85"
+  },
+  {
+   "id": 1,
+   "title": "今冬の大雪は『平成18年豪雪』、死者数は戦後2番目に",
+   "url": "https://ja.wikinews.org/wiki/%E4%BB%8A%E5%86%AC%E3%81%AE%E5%A4%A7%E9%9B%AA%E3%81%AF%E3%80%8E%E5%B9%B3%E6%88%9018%E5%B9%B4%E8%B1%AA%E9%9B%AA%E3%80%8F%E3%80%81%E6%AD%BB%E8%80%85%E6%95%B0%E3%81%AF%E6%88%A6%E5%BE%8C2%E7%95%AA%E7%9B%AE%E3%81%AB"
+  }
+ ]
+}
