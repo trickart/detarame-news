@@ -1,0 +1,45 @@
+{
+ "date": "2026-10-13",
+ "method": "markov2",
+ "title": "中国で春節休暇始まる、日本でもスタート",
+ "segments": [
+  {
+   "text": "中国で",
+   "source": 0
+  },
+  {
+   "text": "春節休暇始まる、日本",
+   "source": 1
+  },
+  {
+   "text": "で",
+   "source": 2
+  },
+  {
+   "text": "もスタート",
+   "source": 3
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "中国でフランス系デパートへのボイコット運動",
+   "url": "https://ja.wikinews.org/wiki/%E4%B8%AD%E5%9B%BD%E3%81%A7%E3%83%95%E3%83%A9%E3%83%B3%E3%82%B9%E7%B3%BB%E3%83%87%E3%83%91%E3%83%BC%E3%83%88%E3%81%B8%E3%81%AE%E3%83%9C%E3%82%A4%E3%82%B3%E3%83%83%E3%83%88%E9%81%8B%E5%8B%95"
+  },
+  {
+   "id": 1,
+   "title": "中国で春節休暇始まる、日本への渡航者は減少",
+   "url": "https://ja.wikinews.org/wiki/%E4%B8%AD%E5%9B%BD%E3%81%A7%E6%98%A5%E7%AF%80%E4%BC%91%E6%9A%87%E5%A7%8B%E3%81%BE%E3%82%8B%E3%80%81%E6%97%A5%E6%9C%AC%E3%81%B8%E3%81%AE%E6%B8%A1%E8%88%AA%E8%80%85%E3%81%AF%E6%B8%9B%E5%B0%91"
+  },
+  {
+   "id": 2,
+   "title": "2.7ギガバイトのGmail、日本でも登録制に",
+   "url": "https://ja.wikinews.org/wiki/2.7%E3%82%AE%E3%82%AC%E3%83%90%E3%82%A4%E3%83%88%E3%81%AEGmail%E3%80%81%E6%97%A5%E6%9C%AC%E3%81%A7%E3%82%82%E7%99%BB%E9%8C%B2%E5%88%B6%E3%81%AB"
+  },
+  {
+   "id": 3,
+   "title": "アップルの音楽配信20か国に、日本でもスタート",
+   "url": "https://ja.wikinews.org/wiki/%E3%82%A2%E3%83%83%E3%83%97%E3%83%AB%E3%81%AE%E9%9F%B3%E6%A5%BD%E9%85%8D%E4%BF%A120%E3%81%8B%E5%9B%BD%E3%81%AB%E3%80%81%E6%97%A5%E6%9C%AC%E3%81%A7%E3%82%82%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88"
+  }
+ ]
+}
