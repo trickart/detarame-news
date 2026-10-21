@@ -1,0 +1,27 @@
+{
+ "date": "2026-10-22",
+ "method": "splice",
+ "title": "中学でも履修漏れ、35都道県に",
+ "segments": [
+  {
+   "text": "中学でも履修",
+   "source": 0
+  },
+  {
+   "text": "漏れ、35都道県に",
+   "source": 1
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "中学でも履修不足—松山市",
+   "url": "https://ja.wikinews.org/wiki/%E4%B8%AD%E5%AD%A6%E3%81%A7%E3%82%82%E5%B1%A5%E4%BF%AE%E4%B8%8D%E8%B6%B3%E2%80%94%E6%9D%BE%E5%B1%B1%E5%B8%82"
+  },
+  {
+   "id": 1,
+   "title": "高校の履修漏れ、35都道県に",
+   "url": "https://ja.wikinews.org/wiki/%E9%AB%98%E6%A0%A1%E3%81%AE%E5%B1%A5%E4%BF%AE%E6%BC%8F%E3%82%8C%E3%80%8135%E9%83%BD%E9%81%93%E7%9C%8C%E3%81%AB"
+  }
+ ]
+}
