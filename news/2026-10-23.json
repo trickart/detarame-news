@@ -1,0 +1,27 @@
+{
+ "date": "2026-10-23",
+ "method": "markov2",
+ "title": "関西大学野球部 秋季大会出場辞退に伴う余波",
+ "segments": [
+  {
+   "text": "関西大学野球部 秋季大会出場辞退",
+   "source": 0
+  },
+  {
+   "text": "に伴う余波",
+   "source": 1
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "関西大学野球部 秋季大会出場辞退 - 部員の恐喝未遂逮捕事件で",
+   "url": "https://ja.wikinews.org/wiki/%E9%96%A2%E8%A5%BF%E5%A4%A7%E5%AD%A6%E9%87%8E%E7%90%83%E9%83%A8_%E7%A7%8B%E5%AD%A3%E5%A4%A7%E4%BC%9A%E5%87%BA%E5%A0%B4%E8%BE%9E%E9%80%80_-_%E9%83%A8%E5%93%A1%E3%81%AE%E6%81%90%E5%96%9D%E6%9C%AA%E9%81%82%E9%80%AE%E6%8D%95%E4%BA%8B%E4%BB%B6%E3%81%A7"
+  },
+  {
+   "id": 1,
+   "title": "第87回夏の甲子園、直前の出場辞退に伴う余波",
+   "url": "https://ja.wikinews.org/wiki/%E7%AC%AC87%E5%9B%9E%E5%A4%8F%E3%81%AE%E7%94%B2%E5%AD%90%E5%9C%92%E3%80%81%E7%9B%B4%E5%89%8D%E3%81%AE%E5%87%BA%E5%A0%B4%E8%BE%9E%E9%80%80%E3%81%AB%E4%BC%B4%E3%81%86%E4%BD%99%E6%B3%A2"
+  }
+ ]
+}
