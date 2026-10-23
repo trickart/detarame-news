@@ -1,0 +1,27 @@
+{
+ "date": "2026-10-24",
+ "method": "splice",
+ "title": "CESA、家庭に15%の節電を要請",
+ "segments": [
+  {
+   "text": "CESA、家庭",
+   "source": 0
+  },
+  {
+   "text": "に15%の節電を要請",
+   "source": 1
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "CESA、家庭用ゲームソフトの販売自主規制を発表",
+   "url": "https://ja.wikinews.org/wiki/CESA%E3%80%81%E5%AE%B6%E5%BA%AD%E7%94%A8%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%BD%E3%83%95%E3%83%88%E3%81%AE%E8%B2%A9%E5%A3%B2%E8%87%AA%E4%B8%BB%E8%A6%8F%E5%88%B6%E3%82%92%E7%99%BA%E8%A1%A8"
+  },
+  {
+   "id": 1,
+   "title": "関西電力、管内の企業や家庭に15%の節電を要請",
+   "url": "https://ja.wikinews.org/wiki/%E9%96%A2%E8%A5%BF%E9%9B%BB%E5%8A%9B%E3%80%81%E7%AE%A1%E5%86%85%E3%81%AE%E4%BC%81%E6%A5%AD%E3%82%84%E5%AE%B6%E5%BA%AD%E3%81%AB15%25%E3%81%AE%E7%AF%80%E9%9B%BB%E3%82%92%E8%A6%81%E8%AB%8B"
+  }
+ ]
+}
