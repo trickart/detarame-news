@@ -1,0 +1,27 @@
+{
+ "date": "2026-10-28",
+ "method": "splice",
+ "title": "ニューヨーク・公共の場での喫煙を禁止",
+ "segments": [
+  {
+   "text": "ニューヨーク・公共",
+   "source": 0
+  },
+  {
+   "text": "の場での喫煙を禁止",
+   "source": 1
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "ニューヨーク・公共交通のスト解除",
+   "url": "https://ja.wikinews.org/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A8%E3%83%BC%E3%82%AF%E3%83%BB%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A%E3%81%AE%E3%82%B9%E3%83%88%E8%A7%A3%E9%99%A4"
+  },
+  {
+   "id": 1,
+   "title": "フランス、公共の場での喫煙を禁止",
+   "url": "https://ja.wikinews.org/wiki/%E3%83%95%E3%83%A9%E3%83%B3%E3%82%B9%E3%80%81%E5%85%AC%E5%85%B1%E3%81%AE%E5%A0%B4%E3%81%A7%E3%81%AE%E5%96%AB%E7%85%99%E3%82%92%E7%A6%81%E6%AD%A2"
+  }
+ ]
+}
