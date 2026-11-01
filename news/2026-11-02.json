@@ -1,0 +1,107 @@
+{
+ "date": "2026-11-02",
+ "method": "markov2",
+ "title": "第89回全国高等学校野球大会 出場校/特集",
+ "segments": [
+  {
+   "text": "第",
+   "source": 0
+  },
+  {
+   "text": "89",
+   "source": 1
+  },
+  {
+   "text": "回",
+   "source": 2
+  },
+  {
+   "text": "全国",
+   "source": 3
+  },
+  {
+   "text": "高等",
+   "source": 4
+  },
+  {
+   "text": "学校",
+   "source": 5
+  },
+  {
+   "text": "野球",
+   "source": 6
+  },
+  {
+   "text": "大会",
+   "source": 7
+  },
+  {
+   "text": " ",
+   "source": 8
+  },
+  {
+   "text": "出場",
+   "source": 9
+  },
+  {
+   "text": "校",
+   "source": 3
+  },
+  {
+   "text": "/特集",
+   "source": 2
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "第6世代、新製品「iPod touch」 - 米Appleが発表",
+   "url": "https://ja.wikinews.org/wiki/%E7%AC%AC6%E4%B8%96%E4%BB%A3%E3%80%81%E6%96%B0%E8%A3%BD%E5%93%81%E3%80%8CiPod_touch%E3%80%8D_-_%E7%B1%B3Apple%E3%81%8C%E7%99%BA%E8%A1%A8"
+  },
+  {
+   "id": 1,
+   "title": "第89回全国高等学校野球選手権大会 組み合わせ",
+   "url": "https://ja.wikinews.org/wiki/%E7%AC%AC89%E5%9B%9E%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E5%A4%A7%E4%BC%9A_%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B"
+  },
+  {
+   "id": 2,
+   "title": "第89回全国高等学校野球選手権大会 出場校/特集",
+   "url": "https://ja.wikinews.org/wiki/%E7%AC%AC89%E5%9B%9E%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E5%A4%A7%E4%BC%9A_%E5%87%BA%E5%A0%B4%E6%A0%A1%2F%E7%89%B9%E9%9B%86"
+  },
+  {
+   "id": 3,
+   "title": "第89回全国高等学校野球選手権大会 出場校",
+   "url": "https://ja.wikinews.org/wiki/%E7%AC%AC89%E5%9B%9E%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E5%A4%A7%E4%BC%9A_%E5%87%BA%E5%A0%B4%E6%A0%A1"
+  },
+  {
+   "id": 4,
+   "title": "大会七日目試合結果 - 第99回全国高等学校野球選手権大会",
+   "url": "https://ja.wikinews.org/wiki/%E5%A4%A7%E4%BC%9A%E4%B8%83%E6%97%A5%E7%9B%AE%E8%A9%A6%E5%90%88%E7%B5%90%E6%9E%9C_-_%E7%AC%AC99%E5%9B%9E%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E5%A4%A7%E4%BC%9A"
+  },
+  {
+   "id": 5,
+   "title": "大会二日目試合結果 - 第99回全国高等学校野球選手権大会",
+   "url": "https://ja.wikinews.org/wiki/%E5%A4%A7%E4%BC%9A%E4%BA%8C%E6%97%A5%E7%9B%AE%E8%A9%A6%E5%90%88%E7%B5%90%E6%9E%9C_-_%E7%AC%AC99%E5%9B%9E%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E5%A4%A7%E4%BC%9A"
+  },
+  {
+   "id": 6,
+   "title": "第87回全国高等学校野球選手権大会2日目試合結果",
+   "url": "https://ja.wikinews.org/wiki/%E7%AC%AC87%E5%9B%9E%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E5%A4%A7%E4%BC%9A2%E6%97%A5%E7%9B%AE%E8%A9%A6%E5%90%88%E7%B5%90%E6%9E%9C"
+  },
+  {
+   "id": 7,
+   "title": "第82回選抜高等学校野球大会 出場校",
+   "url": "https://ja.wikinews.org/wiki/%E7%AC%AC82%E5%9B%9E%E9%81%B8%E6%8A%9C%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E5%A4%A7%E4%BC%9A_%E5%87%BA%E5%A0%B4%E6%A0%A1"
+  },
+  {
+   "id": 8,
+   "title": "第79回選抜高等学校野球大会 組み合わせ",
+   "url": "https://ja.wikinews.org/wiki/%E7%AC%AC79%E5%9B%9E%E9%81%B8%E6%8A%9C%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E5%A4%A7%E4%BC%9A_%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B"
+  },
+  {
+   "id": 9,
+   "title": "第79回選抜高等学校野球大会 出場校",
+   "url": "https://ja.wikinews.org/wiki/%E7%AC%AC79%E5%9B%9E%E9%81%B8%E6%8A%9C%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E5%A4%A7%E4%BC%9A_%E5%87%BA%E5%A0%B4%E6%A0%A1"
+  }
+ ]
+}
