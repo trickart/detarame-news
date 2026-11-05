@@ -1,0 +1,27 @@
+{
+ "date": "2026-11-06",
+ "method": "markov2",
+ "title": "ガソリン価格、3月末から",
+ "segments": [
+  {
+   "text": "ガソリン価格",
+   "source": 0
+  },
+  {
+   "text": "、3月末から",
+   "source": 1
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "ガソリン価格、また値上げ―レギュラーは140円台に",
+   "url": "https://ja.wikinews.org/wiki/%E3%82%AC%E3%82%BD%E3%83%AA%E3%83%B3%E4%BE%A1%E6%A0%BC%E3%80%81%E3%81%BE%E3%81%9F%E5%80%A4%E4%B8%8A%E3%81%92%E2%80%95%E3%83%AC%E3%82%AE%E3%83%A5%E3%83%A9%E3%83%BC%E3%81%AF140%E5%86%86%E5%8F%B0%E3%81%AB"
+  },
+  {
+   "id": 1,
+   "title": "日本のガソリン価格、3月末から18円60銭安 - 4日、石油情報センター",
+   "url": "https://ja.wikinews.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%82%AC%E3%82%BD%E3%83%AA%E3%83%B3%E4%BE%A1%E6%A0%BC%E3%80%813%E6%9C%88%E6%9C%AB%E3%81%8B%E3%82%8918%E5%86%8660%E9%8A%AD%E5%AE%89_-_4%E6%97%A5%E3%80%81%E7%9F%B3%E6%B2%B9%E6%83%85%E5%A0%B1%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC"
+  }
+ ]
+}
