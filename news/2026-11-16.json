@@ -1,0 +1,76 @@
+{
+ "date": "2026-11-16",
+ "method": "markov2",
+ "title": "福島県沖でマグニチュード7.5",
+ "segments": [
+  {
+   "text": "福島",
+   "source": 0
+  },
+  {
+   "text": "県",
+   "source": 1
+  },
+  {
+   "text": "沖",
+   "source": 2
+  },
+  {
+   "text": "で",
+   "source": 3
+  },
+  {
+   "text": "マグニチュード",
+   "source": 4
+  },
+  {
+   "text": "7",
+   "source": 5
+  },
+  {
+   "text": ".",
+   "source": 6
+  },
+  {
+   "text": "5",
+   "source": 5
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "福島県の3町村の避難区域再編を決定 - 葛尾村・富岡町・浪江町",
+   "url": "https://ja.wikinews.org/wiki/%E7%A6%8F%E5%B3%B6%E7%9C%8C%E3%81%AE3%E7%94%BA%E6%9D%91%E3%81%AE%E9%81%BF%E9%9B%A3%E5%8C%BA%E5%9F%9F%E5%86%8D%E7%B7%A8%E3%82%92%E6%B1%BA%E5%AE%9A_-_%E8%91%9B%E5%B0%BE%E6%9D%91%E3%83%BB%E5%AF%8C%E5%B2%A1%E7%94%BA%E3%83%BB%E6%B5%AA%E6%B1%9F%E7%94%BA"
+  },
+  {
+   "id": 1,
+   "title": "福島県の伝統行事「相馬野馬追」が2016年も例年通り行われる、高木復興相も視察に",
+   "url": "https://ja.wikinews.org/wiki/%E7%A6%8F%E5%B3%B6%E7%9C%8C%E3%81%AE%E4%BC%9D%E7%B5%B1%E8%A1%8C%E4%BA%8B%E3%80%8C%E7%9B%B8%E9%A6%AC%E9%87%8E%E9%A6%AC%E8%BF%BD%E3%80%8D%E3%81%8C2016%E5%B9%B4%E3%82%82%E4%BE%8B%E5%B9%B4%E9%80%9A%E3%82%8A%E8%A1%8C%E3%82%8F%E3%82%8C%E3%82%8B%E3%80%81%E9%AB%98%E6%9C%A8%E5%BE%A9%E8%88%88%E7%9B%B8%E3%82%82%E8%A6%96%E5%AF%9F%E3%81%AB"
+  },
+  {
+   "id": 2,
+   "title": "福島県沖でマグニチュード5.0の地震 楢葉町で震度5弱",
+   "url": "https://ja.wikinews.org/wiki/%E7%A6%8F%E5%B3%B6%E7%9C%8C%E6%B2%96%E3%81%A7%E3%83%9E%E3%82%B0%E3%83%8B%E3%83%81%E3%83%A5%E3%83%BC%E3%83%895.0%E3%81%AE%E5%9C%B0%E9%9C%87_%E6%A5%A2%E8%91%89%E7%94%BA%E3%81%A7%E9%9C%87%E5%BA%A65%E5%BC%B1"
+  },
+  {
+   "id": 3,
+   "title": "新潟県沖で震度3の地震",
+   "url": "https://ja.wikinews.org/wiki/%E6%96%B0%E6%BD%9F%E7%9C%8C%E6%B2%96%E3%81%A7%E9%9C%87%E5%BA%A63%E3%81%AE%E5%9C%B0%E9%9C%87"
+  },
+  {
+   "id": 4,
+   "title": "宮城県沖でマグニチュード7.4 東北各地で強い地震",
+   "url": "https://ja.wikinews.org/wiki/%E5%AE%AE%E5%9F%8E%E7%9C%8C%E6%B2%96%E3%81%A7%E3%83%9E%E3%82%B0%E3%83%8B%E3%83%81%E3%83%A5%E3%83%BC%E3%83%897.4_%E6%9D%B1%E5%8C%97%E5%90%84%E5%9C%B0%E3%81%A7%E5%BC%B7%E3%81%84%E5%9C%B0%E9%9C%87"
+  },
+  {
+   "id": 5,
+   "title": "モザンビークでマグニチュード7.5",
+   "url": "https://ja.wikinews.org/wiki/%E3%83%A2%E3%82%B6%E3%83%B3%E3%83%93%E3%83%BC%E3%82%AF%E3%81%A7%E3%83%9E%E3%82%B0%E3%83%8B%E3%83%81%E3%83%A5%E3%83%BC%E3%83%897.5"
+  },
+  {
+   "id": 6,
+   "title": "カリブ海のハイチでマグニチュード7.0の地震",
+   "url": "https://ja.wikinews.org/wiki/%E3%82%AB%E3%83%AA%E3%83%96%E6%B5%B7%E3%81%AE%E3%83%8F%E3%82%A4%E3%83%81%E3%81%A7%E3%83%9E%E3%82%B0%E3%83%8B%E3%83%81%E3%83%A5%E3%83%BC%E3%83%897.0%E3%81%AE%E5%9C%B0%E9%9C%87"
+  }
+ ]
+}
