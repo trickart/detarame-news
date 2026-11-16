@@ -1,0 +1,27 @@
+{
+ "date": "2026-11-17",
+ "method": "splice",
+ "title": "JR可部線 廃線区間の一部を復活 - 43年ぶりの高校野球日本一",
+ "segments": [
+  {
+   "text": "JR可部線 廃線区間の一部を復活",
+   "source": 0
+  },
+  {
+   "text": " - 43年ぶりの高校野球日本一",
+   "source": 1
+  }
+ ],
+ "sources": [
+  {
+   "id": 0,
+   "title": "JR可部線 廃線区間の一部を復活へ - 広島",
+   "url": "https://ja.wikinews.org/wiki/JR%E5%8F%AF%E9%83%A8%E7%B7%9A_%E5%BB%83%E7%B7%9A%E5%8C%BA%E9%96%93%E3%81%AE%E4%B8%80%E9%83%A8%E3%82%92%E5%BE%A9%E6%B4%BB%E3%81%B8_-_%E5%BA%83%E5%B3%B6"
+  },
+  {
+   "id": 1,
+   "title": "2009夏の甲子園 中京大中京が古豪復活 - 43年ぶりの高校野球日本一",
+   "url": "https://ja.wikinews.org/wiki/2009%E5%A4%8F%E3%81%AE%E7%94%B2%E5%AD%90%E5%9C%92_%E4%B8%AD%E4%BA%AC%E5%A4%A7%E4%B8%AD%E4%BA%AC%E3%81%8C%E5%8F%A4%E8%B1%AA%E5%BE%A9%E6%B4%BB_-_43%E5%B9%B4%E3%81%B6%E3%82%8A%E3%81%AE%E9%AB%98%E6%A0%A1%E9%87%8E%E7%90%83%E6%97%A5%E6%9C%AC%E4%B8%80"
+  }
+ ]
+}
